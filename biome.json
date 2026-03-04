@@ -30,11 +30,20 @@
 		"lineEnding": "lf"
 	},
 	"files": {
-		"maxSize": 2097152
+		"maxSize": 2097152,
+		"ignoreUnknown": true
 	},
 	"vcs": {
 		"enabled": true,
 		"clientKind": "git",
 		"useIgnoreFile": true
+	},
+	"css": {
+		"formatter": {
+			"enabled": true
+		},
+		"parser": {
+			"tailwindDirectives": true
+		}
 	}
 }

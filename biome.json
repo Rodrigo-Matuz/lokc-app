@@ -3,7 +3,6 @@
 	"html": {
 		"experimentalFullSupportEnabled": true
 	},
-
 	"assist": {
 		"actions": {
 			"source": {
@@ -11,7 +10,6 @@
 			}
 		}
 	},
-
 	"linter": {
 		"enabled": true,
 		"rules": {
@@ -24,7 +22,6 @@
 			}
 		}
 	},
-
 	"formatter": {
 		"enabled": true,
 		"indentStyle": "tab",
@@ -32,11 +29,9 @@
 		"lineWidth": 100,
 		"lineEnding": "lf"
 	},
-
 	"files": {
 		"maxSize": 2097152
 	},
-
 	"vcs": {
 		"enabled": true,
 		"clientKind": "git",

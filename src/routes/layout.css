@@ -2,7 +2,7 @@
 @import "tw-animate-css";
 @custom-variant dark (&:is(.dark *));
 
-:root {
+.dark {
   --radius: 0.5rem;
 
   --background: oklch(0.89 0 0);
@@ -35,7 +35,8 @@
   --ring: oklch(0.6677 0.2235 36.99);
 }
 
-.dark {
+:root {
+
   --background: oklch(20.019% 0.00002 271.152);
   --foreground: oklch(0.8845 0 0);
 

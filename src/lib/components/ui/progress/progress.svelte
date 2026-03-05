@@ -1,8 +1,9 @@
 <script lang="ts">
+	// biome-ignore lint/style/useImportType: <explanation>
 	import { Progress as ProgressPrimitive } from "bits-ui";
-	import { cn, type WithoutChildrenOrChild } from "src/lib/utils.js";
+	import { cn, type WithoutChildrenOrChild } from "$utils/index";
 
-	let {
+	const {
 		ref = $bindable(null),
 		class: className,
 		max = 100,
@@ -14,14 +15,14 @@
 <ProgressPrimitive.Root
 	bind:ref
 	data-slot="progress"
-	class={cn("bg-primary/20 relative h-2 w-full overflow-hidden rounded-full", className)}
+	class={cn("relative bg-primary/20 rounded-full w-full h-2 overflow-hidden", className)}
 	{value}
 	{max}
 	{...restProps}
 >
 	<div
 		data-slot="progress-indicator"
-		class="bg-primary h-full w-full flex-1 transition-all"
+		class="flex-1 bg-primary w-full h-full transition-all"
 		style="transform: translateX(-{100 - (100 * (value ?? 0)) / (max ?? 1)}%)"
 	></div>
 </ProgressPrimitive.Root>

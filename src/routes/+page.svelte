@@ -1,2 +1,10 @@
-<h1 class="bg-red-500 text-white">Title</h1>
-<p>Test</p>
+<script lang="ts">
+    import Header from "$components/header";
+
+
+    
+</script>
+
+
+<Header></Header>
+<p>a</p>

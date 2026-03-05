@@ -1,9 +1,10 @@
 <script lang="ts">
-	// biome-ignore lint/style/useImportType: <explanation>
-	import { Progress as ProgressPrimitive } from "bits-ui";
+	// biome-ignore lint/style/useImportType: 'ProgressPrimitive' cannot be used as a value because it was imported using 'import type'.
+	import  { Progress as ProgressPrimitive } from "bits-ui";
 	import { cn, type WithoutChildrenOrChild } from "$utils/index";
 
-	const {
+	// biome-ignore lint/style/useConst: Must use let due to problem at: bind:this={ref}
+	let {
 		ref = $bindable(null),
 		class: className,
 		max = 100,
